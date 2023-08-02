@@ -1,8 +1,11 @@
 .page-header {
   display: flex;
   background-color: lightblue;
+  // стилі для десктоп
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
+    // стилі мобілка
+    background-color: tomato;
   }
 }
 
