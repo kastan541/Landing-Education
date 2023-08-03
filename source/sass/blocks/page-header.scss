@@ -1,14 +1,28 @@
 .page-header {
-  display: flex;
-  background-color: lightblue;
+
+    background-color: black;
+    padding-top: 43px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    border-bottom: 1px solid #fff;
+
   // стилі для десктоп
-
-  @media (max-width: $tablet-width) {
-    // стилі мобілка
-    background-color: tomato;
+  
+ 
+}
+@media (max-width: 480px) {
+  // стилі мобілка
+  .page-header {
+    background-color: black;
+    border-bottom: 1px solid #FFF;
+    padding-top: 43px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    
   }
+  
+}
+.main {
+  display: none;
 }
 
-.daily-pay__icon {
-  fill: white;
-}
