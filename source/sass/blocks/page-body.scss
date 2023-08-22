@@ -5,14 +5,170 @@
   font-size: 16px;
   line-height: 20px;
 
-  @media (min-width: $tablet-width) {
-    max-width: 1440px;
-    margin: 0 auto;
+ 
+
+.promo__title {
+  color: $promo__title;
+  font-family:  "Arial","Montserrat", sans-serif;;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  max-width: 513px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+
+    .promo__title {
+      color: $promo__title;
+      font-family: "Arial","Montserrat", sans-serif;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+  }
+
+}
+
+.promo__text {
+  color: $promo__title;
+  text-align: center;
+  /* txt reg */
+  font-family: "Inter", "Arial" sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 25px 70px 40px;
+
+  @media (max-width: $tablet-width) {
+
+    .promo__text {
+      color: $promo__title;
+      font-family: "Inter", "Arial" sans-serif;
+      font-size: 16px;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 30px;
+    }
+  }
+
+}
+
+.promo__form {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+
+    .promo__form {
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      padding: 0px 43px;
+      border-radius: 10px;
+
+    }
+
+  }
+
+}
+
+
+
+.form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 320px;
+  padding: 32px 22px;
+  border-radius: 10px;
+  border: 1px solid $promo__title;
+
+
+  @media (max-width: $tablet-width) {
+
+    .form {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 320px;
+
+      border-radius: 10px;
+    }
+
   }
 }
-.form, .form input {
-  border: 1px solid $border-color;
+
+.promo__block-video {
+  position: relative;
+  width: 100%;
+  padding: 37.37% 0 0;
+
+  @media (max-width: $tablet-width) {
+
+    .promo__block-video {
+      padding: 56.37% 0 0;
+    }
+
+  }
 }
+
+.promo__form-title {
+  color: $promo__title;
+  text-align: center;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 32px;
+
+  @media (max-width: $tablet-width) {
+
+    .promo__form-title {
+      color: $promo__title;
+      text-align: center;
+      font-family: "Inter", "Arial" sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 32px;
+
+    }
+
+  }
+
+}
+
+
+.form input {
+  border: 1px solid $border-color;
+
+  @media (max-width: $tablet-width) {
+
+    .form input {
+      display: flex;
+      padding: 12px 10px;
+      align-items: flex-start;
+      border-radius: 5px;
+      border: 1px solid $promo__title;
+      gap: 10px;
+    }
+
+  }
+
+}
+
 .form input {
   padding: 12px 10px;
   color: $border-color;
@@ -23,10 +179,22 @@
   background: 0 0;
   border-radius: 5px;
 }
+
 .promo__block-video {
   position: relative;
   width: 100%;
   padding: 37.37% 0 0;
+
+
+  @media (max-width: $tablet-width) {
+
+    .promo__block-video {
+      position: relative;
+      width: 100%;
+    }
+
+
+  }
 }
 
 .btn {
@@ -42,10 +210,35 @@
   background-color: $btn-color;
   border: 0;
   border-radius: 5px;
+
+  @media (max-width: $tablet-width) {
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      font-family: "Inter", "Arial", sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: $promo__title;
+      background-color: $btn-color;
+      border: 0;
+      border-radius: 5px;
+    }
+
+  }
+
 }
+
 .container {
   max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 96px;
+  margin: 0 auto;
+  padding: 0 96px;
 
+  @media (max-width: $tablet-width) {
+    max-width: 480px;
+
+  }
 }
