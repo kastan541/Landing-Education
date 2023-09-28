@@ -14,6 +14,7 @@ blockquote {
 
 ul {
   list-style: none;
+  box-sizing: border-box;
 }
 
 a {
@@ -51,9 +52,6 @@ button {
   font-size: 20px;
   line-height: 24px;
   background-color: transparent;
-
-
-
 
   &:active {
     opacity: 0.8;
